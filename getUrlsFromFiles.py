@@ -1,9 +1,9 @@
-# return all urls from files;
+# return all urls from files in currentDir. ;
 
 # for example exec this command  in this dir: python3 getUrlsFromFiles.py ./com.antourong
 
 
-# when you execute the command above this line, you will get a file, same name that you type in;
+# when you execute the command above this line, you will get a "txt" file, same name that you type in;
 
 import os
 import sys
@@ -42,11 +42,13 @@ if __name__ == '__main__':
     args = sys.argv
 
     for name in args:
-        recurisiveFindUrl(args);
+        recurisiveFindUrl(name);
 
-    fileindex = args.rfind("/");
+    firstFileName=args[1];
 
-    filename = args[fileindex + 1:len(args)]
+    fileindex = firstFileName.rfind("/");
+
+    filename = firstFileName[fileindex + 1:len(firstFileName)]
 
     file = open(filename + ".txt", 'w')
 
