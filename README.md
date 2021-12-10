@@ -8,7 +8,7 @@ getUrlsFromFiles:
 
 wechat_push: 
 
-> pip install 
+> pip install -r requirements.txt
 
 > push the loophole to your wechat  app;
 
