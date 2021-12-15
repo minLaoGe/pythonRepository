@@ -32,7 +32,7 @@ siteName = 'RCE'
 # the url of github serach of the loophole name
 searchUrl = 'https://api.github.com/search/repositories?q=+' + loopholeName + '+&sort=updated&per_page=10'
 
-# the keyword  that need to be search loophole
+# the loophole name of the keyword  that need to be searched
 siteUrl = 'https://api.github.com/search/repositories?q=+' + siteName + '+&sort=updated&per_page=10'
 
 sendKey = sendKey + ".send"

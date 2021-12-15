@@ -12,3 +12,6 @@ wechat_push:
 
 > push the loophole to your wechat  app;
 
+getFilmsNames.py:
+
+> pip install lxml
